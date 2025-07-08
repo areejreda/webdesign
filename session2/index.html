@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="div1">
+        <h1 id="h1style">Let's chat</h1>
+        <p>whether you have a question, want to start a project or simply want to connect.</p>
+        <p >Feel free to send me a message in the contact form</p>
+    </div><!--
+    
+    --><div class="div2">
+        <form method="post" autocomplete="off">
+            <h2 id="h2style">contact</h2>
+            <p>*required</p>
+            <input type="text" placeholder="Name *" name ="firstName" minlength="2" maxlength="7" required>
+            <input type ="email" placeholder="Email *" name="emailAddress"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"required>
+            <input type="text" placeholder="Company" name="company">
+            <input type="text" placeholder="Phone" name="phone">
+           <textarea placeholder="message" rows="5" name="message"></textarea>
+           <button type="submit">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

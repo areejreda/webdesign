@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+      font-family: "Lato", sans-serif;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+li{
+    display: inline-block;
+}
+
+
+/* global */
+.container{
+    width:80%;
+    margin:auto;
+}
+.white-tx{
+    color: white;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 700;
+     
+}
+span{
+    color:orange;
+    font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+}
+.float-right{
+    float: right;
+}
+.navtext{
+    color:rgb(230, 227, 227);
+    text-decoration: none;
+}
+.bd-text{
+    color:white;
+    font-weight: 400;
+}
+
+
+
+/* customed */
+
+.black-bg{
+    background-color: black;
+}
+.inline{
+    display: inline-block;
+     vertical-align: top;
+}
+nav{
+    padding: 2% 0% 1% 0%;
+}
+nav ul {
+    width:45%;
+}
+nav li{
+     margin-left:5%;
+}
+.bg-image{
+    background-image: url(../images/pexels-pixabay-302769.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center ;
+    background-size: cover;
+     height: 600px;
+}
+.overlay{
+    background-color: rgb(0 0 0 / 57%);
+    width: 100%;
+    height: 100%;
+}
+.divstyle{
+     padding-top: 5%;
+     width: 50%;
+     margin-left: 0%;
+}
+.hstyle{
+    padding-top: 4%;
+    margin-bottom: 3%;
+    font-size: 500%;
+
+
+}
+.pstyle{
+padding-bottom:3%;
+font-size: 200%;
+}
+.hr{
+    width:10%;
+    margin: 1% 0% ;
+    border:1px solid white;
+}
+.p2style{
+    margin: 5% auto;
+    font-size: 70%;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5%;
+    padding: 12px 24px;
+    font-size: 100%;
+}
+.float-right{
+    float:right;
+}
+.clear{
+    clear: both;
+}
+.formstyle {
+    margin-top: 9%;
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    padding: 0%;
+    vertical-align: top;
+    text-align: center;
+
+}
+.bh {
+ background-color:rgb(248, 244, 244); ;
+ margin-top: 0;
+ padding: 3%;
+}
+
+.inputstyle{
+padding:4% 1%;
+display: block;
+margin:5% auto;
+width:80%;
+border:none;
+border-bottom: 2px solid rgb(233, 227, 227);
+
+}
+.st-bt {
+    margin-top: 15%;
+   width: 100%;
+    display: block;
+    background-color: orange; 
+    color: white;
+    padding: 5%;
+    border: none; 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
