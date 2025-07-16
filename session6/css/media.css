@@ -1,0 +1,47 @@
+
+
+@media (max-width: 575.98px)
+ { 
+  .banner {
+          background-size: 199% 110%;
+        background-position: left;;
+  }
+  .nav ul{
+    display: none;
+  }
+   nav .btn{
+     display:none;  
+   }
+  .nav-icon {
+        margin-left: 220%;
+        font-size: 25px;
+        color: white;
+        display: flex;
+    }
+
+    #sec2 ul{
+        width: 80%;
+    }
+     .card1, .card2 {
+    width:100%;
+  }
+
+  .card3 {
+    display: none;
+  }
+  .button-style{
+    display: none;
+}
+
+ .w-30 {
+    width: 100% ;
+  }
+  .images{
+    display: none;
+  }
+
+  .w-20{
+    width:50%;
+  }
+
+  }
