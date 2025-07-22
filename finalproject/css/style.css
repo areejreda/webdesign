@@ -1,46 +1,85 @@
+/* reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+}
+
 /* general style */
-.bg-white{
+.bg-white {
     background-color: rgb(255, 255, 255);
 }
-.overlay{
-    background-color: rgba(0, 0, 0, 0.678);
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.808);
     width: 100%;
     height: 100%;
 }
 
+hr {
+  opacity: 1.25 !important;
+  border: none;
+}
 
+.hr {
+  background-color: #0d6efd;
+  height: 2px;
+}
 
+.hr-small-left {
+  width: 45%;
+  margin-left: auto;
+}
+.hr-large-left {
+  width: 100%;
+  margin-left: auto;
+}
 
+.hr-small-right {
+  width: 45%;
+  margin-right: auto;
+}
+.hr-large-right {
+  width: 100%;
+  margin-right: auto;
+}
 
 /* customed style */
-.divider{
-    width: 2px; 
+.divider {
+    width: 2px;
     height: 20px;
 }
-.h-2{
-    height:2px;
+
+.h-2 {
+    height: 2px;
 }
+
 .navbar-nav .nav-link:hover {
-  color: #0d6efd; 
-  transition: all  ease-in-out;
+    color: #0d6efd;
+    transition: all ease-in-out;
 }
+
 .navbar .dropdown-menu {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: all 0.4s linear;
-  display: block;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s linear;
+    display: block;
 }
+
 .navbar .nav-item.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
-.navbar .dropdown-menu .dropdown-item:hover{
-    color:#0d6efd;
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: #0d6efd;
 }
-.accordion-button:not(.collapsed) {
-    color: #fdfeff;
+
+/* .accordion-button:not(.collapsed) {
+    color: #5397db;
     background-color: #3061ac;
-}
+} */
 
 .carousel-item img {
     height: 500px;
@@ -53,10 +92,10 @@
 }
 
 .carousel-indicators button {
-    width: 15px;
-    height: 15px;
+    width: 10px !important;
+    height: 10px !important;
     background-color: white;
-    border: none;
+
 }
 
 .carousel-indicators button:hover {
@@ -64,3 +103,27 @@
     border: 1px solid white;
 }
 
+.carousel-indicators .active {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-outline-light:hover {
+    background-color: #0c65ed;
+    border: none;
+}
+.card{
+    border: none;
+    box-shadow: 0px 0px 41px 8px #e1d6d6;
+}
+.card .row:hover i,
+.card .row:hover h5 {
+  color: #0d6efd !important;
+}
+.bg-image{
+    background-image: url(../images/slider2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
