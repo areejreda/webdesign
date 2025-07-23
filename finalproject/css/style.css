@@ -3,7 +3,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 /* general style */
@@ -126,4 +126,14 @@ hr {
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+}
+.card-opacity {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:  0.2s linear;
+}
+
+.cardBox:hover .card-opacity {
+  opacity: 1;
+  transform: translateY(0);
 }
