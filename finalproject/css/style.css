@@ -15,16 +15,17 @@
     background-color: rgba(0, 0, 0, 0.808);
     width: 100%;
     height: 100%;
+    
 }
 
 hr {
   opacity: 1.25 !important;
-  border: none;
 }
 
 .hr {
   background-color: #0d6efd;
   height: 2px;
+   border: none;
 }
 
 .hr-small-left {
@@ -50,36 +51,34 @@ hr {
     width: 2px;
     height: 20px;
 }
+#upArrow {
+  z-index: 9999;
+}
 
 .h-2 {
     height: 2px;
 }
-
-.navbar-nav .nav-link:hover {
-    color: #0d6efd;
-    transition: all ease-in-out;
+.navbar-nav .nav-link {
+  color: #000 !important;
 }
 
 .navbar .dropdown-menu {
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.4s linear;
-    display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  visibility: hidden;
+  display: block;
 }
 
 .navbar .nav-item.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-    color: #0d6efd;
+  color: #0d6efd;
 }
-
-/* .accordion-button:not(.collapsed) {
-    color: #5397db;
-    background-color: #3061ac;
-} */
 
 .carousel-item img {
     height: 500px;
@@ -112,12 +111,12 @@ hr {
     background-color: #0c65ed;
     border: none;
 }
-.card{
+.mcard{
     border: none;
-    box-shadow: 0px 0px 41px 8px #e1d6d6;
+    box-shadow: 0px 0px 41px 8px #b6b2b2;
 }
-.card .row:hover i,
-.card .row:hover h5 {
+.mcard .row:hover i,
+.mcard .row:hover h5 {
   color: #0d6efd !important;
 }
 .bg-image{
@@ -131,9 +130,99 @@ hr {
   opacity: 0;
   transform: translateY(20px);
   transition:  0.2s linear;
+ max-height: 0;
+  
 }
 
 .cardBox:hover .card-opacity {
   opacity: 1;
   transform: translateY(0);
+    transition:  0.5s ease !important;
+      max-height: 500px;
+}
+.cardBox:hover hr {
+  display: none;
+}
+.w-40{
+  width: 40%;
+}
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.btn-outline-dark:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+.card-img-top {
+  width: 100%;
+  transition: 0.5s;
+  display: block;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.card:hover .icons {
+  background-color:  #0c65ed !important;
+ 
+}
+
+.card:hover .progress-bar {
+  width: 100% !important;
+  
+}
+ .card-title:hover {
+  color: #0c65ed !important;
+}
+.card-body .sm1:hover ,.sm2:hover {
+  color: #0c65ed;
+}
+.card i:hover {
+  color: rgb(219, 216, 216);
+}
+.h-200{
+  height: 200px !important;
+}
+ .custom-btn:hover {
+    color: #0d6efd !important;    
+    background-color: #f8f9fa !important; 
+    border-color: #0d6efd !important; 
+ }
+ .fo-btn{
+  border: none;
+ }
+ .fo-btn:hover{
+  background-color: #0c65ed !important;
+  color: white !important;
+ }
+ .dark{
+ background-color: rgba(0, 0, 0, 0.6);
+ }
+
+input:hover,
+  textarea:hover {
+    border-color: #0d6efd !important; 
+  }
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.4s;
+}
+
+.btn-shine:hover::after {
+  left: 100%;
 }
